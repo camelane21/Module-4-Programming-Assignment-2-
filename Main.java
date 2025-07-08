@@ -46,7 +46,7 @@ public class Main {
         System.out.println("The number of keywords in " + args[0] + " is " + count);
     }
 
-    private static int countKeywords(String text) {
+    private static int Main (String text) {
         int cnt = 0;
         // Split on any character that is not a letter
         String[] tokens = text.split("[^A-Za-z]+");
