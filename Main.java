@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CountKeywords {
+public class Main {
     // Java keywords (from Java 8)
     private static final String[] keywordArray = {
         "abstract", "assert", "boolean",   "break",      "byte",
