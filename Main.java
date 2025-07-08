@@ -25,7 +25,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         if (args.length != 1) {
-            System.err.println("Usage: java CountKeywords <JavaSourceFile>");
+            System.err.println("Usage: java Main <JavaSourceFile>");
             System.exit(1);
         }
         String content = new String(
@@ -42,7 +42,7 @@ public class Main {
         // 3) Remove string literals: " ... "
         content = content.replaceAll("\"(?:\\\\.|[^\"\\\\])*\"", " ");
 
-        int count = countKeywords(content);
+        int count = Main(content);
         System.out.println("The number of keywords in " + args[0] + " is " + count);
     }
 
